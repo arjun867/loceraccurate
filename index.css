@@ -190,6 +190,20 @@
   display: flex;
   align-items: center;
 }
+
+.custom-home:hover,.custom-bus:hover,.custom-about:hover{
+  text-decoration: underline;
+}
+
+.getappban{
+  color: black;
+  text-decoration: none;
+}
+.signupban{
+  color: black;
+  text-decoration: none;
+}
+
 .tags7 {
   align-self: stretch;
   flex: 1;
