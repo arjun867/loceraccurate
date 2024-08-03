@@ -694,22 +694,22 @@
   color: var(--color-white);
   font-family: var(--font-poppins);
 }
-.frequently-asked,
-.question15 {
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
+.faq-checkbox {
+  display: none;
 }
-.frequently-asked {
-  margin: 0;
-  font-size: inherit;
-  font-weight: 600;
-  font-family: inherit;
+
+.question14 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px; /* Add padding for better spacing */
 }
+
 .question15 {
   flex: 1;
   font-weight: 500;
 }
+
 .type-qestion7 {
   width: 960px;
   display: flex;
@@ -720,47 +720,32 @@
   box-sizing: border-box;
   max-width: 100%;
 }
+
 .add-icon7 {
   height: 40px;
   width: 40px;
-  position: relative;
+  transition: transform 0.3s ease;
 }
-.question14 {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  row-gap: 20px;
-  max-width: 100%;
-  gap: var(--gap-0);
+
+.faq-checkbox:checked + .question14 .add-icon7 {
+  transform: rotate(45deg); /* Adjust this if needed */
 }
-.answer14,
-.answer15 {
-  margin: 0 !important;
-  position: absolute;
-}
-.answer15 {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: inline-block;
-}
+
 .answer14 {
-  width: 640px;
-  height: 30px;
-  top: 31px;
-  left: 41px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  opacity: 0;
-  z-index: 1;
-  font-size: var(--font-size-12xs);
+  display: none;
+  padding: 20px; /* Increase padding for better visibility */
+  font-size: var(--font-size-14xs); /* Adjust font size if needed */
   color: var(--color-black);
+  width: 960px;
+  box-sizing: border-box;
+  max-height: 300px; /* Add max height to control the expansion */
+  overflow-y: auto; /* Allow scrolling if content is too long */
 }
+
+.faq-checkbox:checked + .question14 + .answer14 {
+  display: block;
+}
+
 .f-a-q-title,
 .faq7,
 .faqhome {
@@ -769,6 +754,7 @@
   align-items: flex-start;
   max-width: 100%;
 }
+
 .faq7 {
   align-self: stretch;
   background-color: var(--color-white);
@@ -777,25 +763,30 @@
   box-sizing: border-box;
   position: relative;
 }
+
 .f-a-q-title,
 .faqhome {
   justify-content: flex-start;
 }
+
 .faqhome {
   align-self: stretch;
   gap: var(--gap-5xs);
   font-size: var(--font-size-5xl);
   color: var(--color-gray-300);
 }
+
 .f-a-q-title {
   width: 1062px;
   gap: var(--gap-lg);
 }
+
 .f-a-q-title-wrapper,
 .locer8 {
   font-family: var(--font-poppins);
   text-align: left;
 }
+
 .f-a-q-title-wrapper {
   align-self: stretch;
   display: flex;
