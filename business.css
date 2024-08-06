@@ -14,6 +14,11 @@
   font-weight: 600;
   white-space: pre-wrap;
 }
+
+.locer-container {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+}
 .for-merchants1 {
   font-weight: 300;
 }
@@ -28,7 +33,7 @@
 }
 .locer {
   height: 36px;
-  width: 213px;
+  /* width: 213px; */
   flex-shrink: 0;
 }
 .get-app {
