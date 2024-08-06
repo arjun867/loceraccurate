@@ -1,3 +1,7 @@
+.business {
+  margin: 0 auto; /* Center the container */
+}
+
 .business-child {
   width: 437px;
   height: 558px;

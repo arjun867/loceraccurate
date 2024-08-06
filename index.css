@@ -1,3 +1,7 @@
+.homepage {
+  margin: 0 auto; /* Center the container */
+}
+
 .shop-closer-child {
   position: absolute;
   top: 0;
